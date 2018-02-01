@@ -1,0 +1,46 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Hadley: S3
+
+What is an attribute? How do you set an attribute? What is an object that you can't set an attribute on? NULL. 
+
+The most important attribute is the Names attribute, which powers the names function. 
+
+```{r}
+
+structure(x, min = 1, max = 10)
+attributes(x)
+
+#can't set an attribute on NULL
+attr(NULL, "x")
+structure(NULL, x = 1)
+
+
+```
+
+The most important S3 classes are factor and data frames. 
+
+What are factors built on top of? 
+Built on top of integers. 
+
+What attributes do they use? 
+Levels and class 
+If it has a class attribute, it's an S3 object, if not, it isn't. 
+
+
+What are data frames built on top of? 
+names, row names, class
+Class is what makes a data frame behave like a data frame instead of a list
+
+Defining your own vector class is super difficult. By and large, you don't need to create the equivalant of a vector, most of the time you use someone else's data. 
+
+Scalar Classes
+Provide consistent structure and print method for complex return values. 
+
+What are the constraints on the results of safely? 
+It will always return a list, with two components: result and error. Result should always come first. one is always NULL. 
+
+
