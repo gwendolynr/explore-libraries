@@ -1,10 +1,4 @@
 # explore-libraries
 RStudio::conf training days
 
-this is a line i am adding. 
-
-This is a line I'm adding from github. 
-
-Let's look at a file!
-
-[01_explore-libraries_jenny.md]
+This is the readme for the rstudio::conf training day with Jenny Bryan. She is teaching us a class on "What they didn't teach you about R", which is a git heavy course. As part of the course, we are learning how to enable github pages so we can make mini websites. Pretty cool/easy. 
